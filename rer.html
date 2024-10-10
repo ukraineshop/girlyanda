@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://svetr-plussize.website/ -->
+<html lang="ru-RU"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=480">
+    <meta name="description" content="">
+    <meta property="og:image" content="img/1/1.jpeg">
+    <meta name="keywords" content="ХІТ СЕЗОНУ">
+    <meta property="og:type" content="website">
+    <title>Костюм</title>
+    <link rel="stylesheet" href="./rer_files/reset.css">
+<link rel="stylesheet" href="./rer_files/slick.css">
+<link rel="stylesheet" href="./rer_files/slick-theme.css">
+<link rel="stylesheet" href="./rer_files/styles.css">
+<style>
+  
+
+    .snowflakes {
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        width: 100%;
+        height: 100%;
+        z-index: 0,5;
+    }
+    
+    .snowflake {  
+        position: absolute;
+        /* background: #fff; */
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        opacity: 0.5;
+        background-image: url('f2.png'); 
+    background-size: cover;
+       
+        animation: rise 20s linear infinite; 
+    }
+    
+@keyframes rise {
+    0% {
+        transform: translateY(100vh); 
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%); 
+        opacity: 0;
+    }}
+    
+    </style>
+    
+     <style type="text/css">span.im-caret {
+    -webkit-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@-webkit-keyframes blink {
+    from, to {
+        border-right-color: black;
+    }
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+span.im-static {
+    color: grey;
+}
+
+div.im-colormask {
+    display: inline-block;
+    border-style: inset;
+    border-width: 2px;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+div.im-colormask > input {
+    position: absolute;
+    display: inline-block;
+    background-color: transparent;
+    color: transparent;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
+    border-style: none;
+    left: 0; /*calculated*/
+}
+
+div.im-colormask > input:focus {
+    outline: none;
+}
+
+div.im-colormask > div {
+    color: black;
+    display: inline-block;
+    width: 100px; /*calculated*/
+}</style></head><body><div class="snowflakes"><div class="snowflake" style="left: 88.4026vw; animation-duration: 8.83918s; top: -10px;"></div><div class="snowflake" style="left: 129.166vw; animation-duration: 7.65141s; top: -10px;"></div><div class="snowflake" style="left: 187.22vw; animation-duration: 9.94984s; top: -10px;"></div><div class="snowflake" style="left: 127.226vw; animation-duration: 8.81914s; top: -10px;"></div><div class="snowflake" style="left: 90.5441vw; animation-duration: 3.72916s; top: -10px;"></div><div class="snowflake" style="left: 177.283vw; animation-duration: 7.42762s; top: -10px;"></div><div class="snowflake" style="left: 192.873vw; animation-duration: 8.69441s; top: -10px;"></div><div class="snowflake" style="left: 49.4821vw; animation-duration: 3.01432s; top: -10px;"></div><div class="snowflake" style="left: 66.4062vw; animation-duration: 3.23823s; top: -10px;"></div><div class="snowflake" style="left: 96.6938vw; animation-duration: 4.87303s; top: -10px;"></div><div class="snowflake" style="left: 91.3444vw; animation-duration: 4.90666s; top: -10px;"></div><div class="snowflake" style="left: 101.586vw; animation-duration: 7.90705s; top: -10px;"></div><div class="snowflake" style="left: 40.3442vw; animation-duration: 7.83336s; top: -10px;"></div><div class="snowflake" style="left: 164.76vw; animation-duration: 9.09052s; top: -10px;"></div><div class="snowflake" style="left: 118.459vw; animation-duration: 10.7416s; top: -10px;"></div><div class="snowflake" style="left: 177.049vw; animation-duration: 10.398s; top: -10px;"></div><div class="snowflake" style="left: 191.38vw; animation-duration: 10.4891s; top: -10px;"></div><div class="snowflake" style="left: 89.7801vw; animation-duration: 6.42854s; top: -10px;"></div><div class="snowflake" style="left: 116.348vw; animation-duration: 9.0748s; top: -10px;"></div><div class="snowflake" style="left: 149.161vw; animation-duration: 6.96001s; top: -10px;"></div></div>
+    
+    <script src="./rer_files/2622566214565151" async=""></script><script async="" src="./rer_files/fbevents.js.завантаження"></script><script>
+        document.addEventListener("DOMContentLoaded", function() {
+         const snowflakesContainer = document.querySelector(".snowflakes");
+     
+         for (let i = 0; i < 20; i++) {
+             createSnowflake();
+         }
+     
+         function createSnowflake() {
+             const snowflake = document.createElement("div");
+             snowflake.className = "snowflake";
+             snowflake.style.left = `${Math.random() * 100}vw`;
+             snowflake.style.animationDuration = `${Math.random() * 8 + 3}s`;
+     
+             snowflakesContainer.appendChild(snowflake);
+     
+             snowflake.addEventListener("animationiteration", () => {
+                 resetSnowflake(snowflake);
+             });
+         }
+     
+         function resetSnowflake(snowflake) {
+             snowflake.style.transition = "none"; 
+             snowflake.style.top = "-10px"; 
+             snowflake.style.left = `${Math.random() * 200}vw`;
+             snowflake.offsetHeight; 
+             snowflake.style.transition = ""; 
+         }
+     });
+     </script>
+<style>
+    #fast-delivery-widget {
+        position: fixed;
+        bottom: 35px;
+        left: 20px;
+        z-index: 600;
+        padding: 10px 30px 10px 70px;
+        border-radius: 5px;
+         -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,.15);
+        box-shadow: 0 0 16px 0 rgba(0,0,0,.15);
+    }
+    #fast-delivery-widget .fast-delivery-widget__close {
+        display: block;
+        width: 11px;
+        height: 11px;
+        position: absolute;
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+    }
+   
+    #fast-delivery-widget .fast-delivery-widget__close:before {
+        left: 5px;
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    #fast-delivery-widget .fast-delivery-widget__close:after {
+        left: 5px;
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    #fast-delivery-widget.fast-delivery-widget_light .fast-delivery-widget__close:before,
+    #fast-delivery-widget.fast-delivery-widget_light .fast-delivery-widget__close:after {
+        background: #b5b5b5;
+    }
+    #fast-delivery-widget.fast-delivery-widget_green .fast-delivery-widget__close:before,
+    #fast-delivery-widget.fast-delivery-widget_green .fast-delivery-widget__close:after {
+        background: #fff;
+    }
+
+    #fast-delivery-widget .fast-delivery-widget__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 1.5em;
+        letter-spacing: .2px;
+    }
+    #fast-delivery-widget .fast-delivery-widget__info {
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+
+    #fast-delivery-widget.fast-delivery-widget_light {
+        color: #333;
+        background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAFFklEQVRYhcXYaYydUxgH8N+t0dYyU0qLoqViryX2ZVS1tEVryRBrLJUYiYgPEiFEgk8IQiQm9lL70qIttaczidoaS60tsS+lWrdMtarjw3Pe3neue8edMcM/OXnvPec95/zfZzvPcwrNrfV6iH7YHielthQPYw4+w+paFmlpLFbsr+sBoYEYgyYcj01yYwdjMZ7FLLTh2x7s0S1imyYyJyYCA1P/EjyJ9XEUhuKM1N7GXMzAK+joLWL9MBJn4hRslxv7FPfiMXyCdbAtjhWq3R17pnZOIvkkHsVX+LOrjQtVbKwe+ycyTRiU+tsxPxF6BL9UWXcARieCY8o+qIinMR3zWhqL39RCbBgm4ARMFBKD74VRP5aef1QhVAnDMV6ouRFDcmPvYDZeQmtLY3FlObFdcTqOxm65iR/hfjyFd7tBZisckjb+INtLqHWc0MIBufeXC1XPwvSWxuInhebW+qtwPganl1YIQ50mpLOkRjL9sQvOThsPEyFkBm4VJrAmvduQSB6HI7FTbp0luKvQ3Fq/FBvlBubiYrxWI6EBGIspQuLrpf7VSs71O2Zialo/C15DE7mr0+8MvxSaW+t/KOuEn/C88KDn8FsXxCYJVRfS/w6h/qnYW0hwx9z7LwrDHybseK/cWPYxiwvNrfWLhUHeINR4rpKBrsZbeAgPiOBZjgPS2La5vvlpzn1YNxG4DCOqfNwbuAtb4Ar82C83+Bouxz64VBh+nQgbN+J1XIs90mYZ5glvuzCtsSxJ4VoswJVCcoN0xspEZizGtjQWW/BhNpiX2BTcnZvYIPR/kvCwLK6swONCXfMSkTwmJVI7V5DMl+k5HO9jVP6sPK+t4exEtpPEylEUgXRSIngLvhbGfbqIP9OFpLYRnnWhOIqGlK21BtdhctqYiJH9q21ey1nZIQLgS7gZxwiD3lVE9TG4IK2Vt6FFqU0Ux89N+CbN/0d0JbFKWIjrhWpPFp7bLo6cEUKtc3CWiFNXp3kFJVOoKXHoLrEMWe41Prf5r0JVE0Wo+E0ppmXk8s8+IZbHF+nZLkJLHpVItHcxtha9QSyTSj8ldZVjDVYJle+X+rpUaU8y2HJ0VPmdR0GEot2V4tmvusjJeoNYV8jWX1c4DJEktuF2/yOx74SjbCw8eBZeVkMK1dfE3sPhIgNZIPKumtDXxNaIA73b6A2v7BNUIzYSO/yXRMpRidhuaMWruAeH6hzB+xJrg26eWFahdKQ2WNSTr4i8/VSdq+6+wIpKxLJiZIE4765RcuvxIv+6Q41nXQ+xWfajTiknugyjRHXUhktEqjJOZAvjRPLYqzivraFBHP6TRTYLA+pwpyjhN0ezSPTm4jaRDE5LbZQImDXfP3SBDUU+15TayNzYMjxQh4vwYCI0XlQ0E1KbL1Q4U6j432KUcKbjcZiSKa0SBe8cPNHSWHw7C7BvpjZSFKBNaeJeqV0gVckik+2O1IYqXRGMxpa5sYXiymqOuCJYWwBUu1QZjINEbj9ZXDERlyivizDyhChkTxVS/Sl92PIkiYPSB07QuTBpxwviHqS1pbH4eSUC1Y6kn4X6nhFl/5S0ydY4IrX3RIGSeXOHCMr7pQ/aV6nMWylKsxmiiF7oHy5mqkmsEoaJUq4JByrZxx+JwCoRh/L148fCw2cIKf1evmhvXHV+KwrfO4XEjhNGvEEa75/acmE3sxOpRd3Yo0fEMhRFwfuUqBVPE1Isisu82eKG8W/S6Q7+AhQaQsvQfI6FAAAAAElFTkSuQmCC) no-repeat  15px center;
+    }
+
+    #fast-delivery-widget.fast-delivery-widget_green {
+        background: #67c30d url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAmCAYAAACoPemuAAAExUlEQVRYhcWYe4hXRRTHP7s+1lLX0rSyl1iKlZqR9KA3pVhtkEllapZQUQQVPdA/pCh7kGFRGASp2UusoPQPzcpealiBJiZWupmWJK6K66rrez/9MXPdu3fvPn4/3PrCcOfO3JnznXPOzD1nSlSKRCnQD7gjlp3Ah8DnwAbgcLETA5QUQawTcA0wChgJ9Mj0VwGLgAXAMuCftiZ2UiRzG3B5JAiwA5gPHA/cCJSnxqwClgDzgG+B1mtBba6UqueoU9RKG6JSfUo9T22vlqkD1InqSvVw6ts96jL1SbWP2q4FuU0S66per85Uq1MC9qpL1fvUbs1MXKYOU2fkLGiX+r46Sj2ttcR6qxPUBeqR1GRb1NlqhdqhpdVmypnqveonalWG5Cr1haiEsjxi56svqqszA39VJ6uDCyRzunqnwcxJW4l6ofqEujwjp0ZdYnCD/gmxZ9UdqY9q1YXqGLVHAWQ6qkPU19TNal2cd6Y61OCvybfl6lXqK3HxaWxXp6LuzHR8p15SAKEy9Qb147ioBIdS9X2xvyKSSsb2Uu9Xt2Y4VJPTqLpNnaOOVDu3QKwiaidBnfqewW8mqr9l5l6sPqQ+r67I9CWL2Yr1DjlNfc6GDnpI/UF9NK4uj9il6oaMgBWGo+EU9QzDLt6Yo4AEP6kPqM/E96o0sdut30WTbGz7jepU9QIb78ze6sNxEWnX2K7OUt+0scvsN/jftWqXOM/oPGITMsLK1fGGo6MmNWGtwVQj1BPMN+3aJjSzKRbVNTljJyTESpv5KdQA7wIVwC3AdGAzcBwwDlgIfAo8AvQBBsT6eKBnZq464GXgZmBWbCsFOjb3S2pKY3mln/p4XG0alTb2ofXqZ7F+0PpTfnJsW2s4YgrWWB7WA9OAK4HRwJdALXA2cBZQTQh77gGGAFPiuBKga6y3b42gQoklSGKv4SnhewimGgG8A+wlmD1BSebZJsTS2BSftcCKTF8eidpm+o7iWBBLtFJKvbmyqAMOEkx+cWxr1qStsncLsIl6GiXA28BgoFts2wMcaUtizSGZvwNhwwD8TQi53+J/JLaFsFFOJOzgBcA3wOqWBrY1sV+A64EyYA2wu7UD25pYHbCymIHHYle2CZoi1hfo/18SySKP2CBgKbAcmA1cTcMTvC1x9NBNEzsQn8bSHbibkKjOA8bQOOs+1tiXR6x7fK4h/O9eon5bDwc+AGbQyn9dkTj5aM36hHaLIdK8IhWGnKqOM8Tpql8Z0rC8UGWb2rMVoVO2lKtj1bmpEGwXhlg/nW3XqovUW9VOqQkGmp/OFUOsiyETm6r+0TCMc6f6RvLhUPV1G2c0K9THjEloE6UQYgMNGdJiG2b6B9QfDTnuEG18RdA3Dvw6Q/BPdbp6nYWbspfBHeYYEuE01kWF3GTDfLPJS5XuhqRiruEiJUG1+oUhS0/MPCZFrGtsKzX46qs2Tkz2qvPVuww3P7kcWvKFduqgKOCvjIDVhix6UnyvUi9SH1S/N8T5CfarP6tPG+4zWryYKeTirjfhSnMUcBn1R80hQlhzkHAOdUuN+Z0Q4swDFgP7WyusmKvOcmAYIaUbCXTO9O8mXHUujKQqCxVQLLEEHYBzgbEELdYAH0VC6yhAO3n4FwMIGWoKRfvWAAAAAElFTkSuQmCC) no-repeat 15px center;
+        color:#fff;
+    }    
+</style>
+
+    
+    
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2622566214565151');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2622566214565151&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+
+
+    <script>
+        var seconds=0;
+        function timeDisp() {
+          seconds ++;
+          var obj=document.getElementById("total");
+        
+          obj.value=seconds;
+       
+        }
+        setInterval(timeDisp,1000);
+    </script>
+    
+    
+    <div class="main_wrapper">
+        <header class="offer_section offer3">
+            <h1 class="main_title">ХІТ 2024 року</h1>
+            <div class="info_block">
+                <p class="subtitle"> ВУЛИЧНІ РЕТРО-ГІРЛЯНДИ </p>
+                <div class="discount"><b>50% знижка</b></div>
+                <img src="./rer_files/34.jpg" alt="">
+            </div>
+            <div class="price_block">
+                <div class="price_item old">
+                    <div class="text">Звичайна ціна:</div>
+                    <div class="value">1500грн</div>
+                </div>
+                <div class="price_item new">
+                    <div class="text">Ціна сьогодні:</div>
+                    <div class="value" id="prices">999грн</div>
+                </div>
+            </div>
+            <div class="benefits_block clearfix">
+                <div class="benefit_item">
+                    <img src="./rer_files/11.jpg" alt="">
+                    <p> ЗАМОВЛЯЙ </p>
+                </div>
+                <div class="benefit_item">
+                    <img src="./rer_files/22.jpg" alt="">
+                    <p style="text-transform: uppercase">ЗАРАЗ  </p>
+                </div>
+                <div class="benefit_item">
+                    <img src="./rer_files/33.jpg" alt="">
+                    <p>ОТРИМУЙ ПОДАРУНОК</p>
+                </div>
+            </div>
+        <div class="products_count">Знижка діє<br> <b style="background-color: rgb(226, 172, 36);color: #000;"> з <script type="text/javascript">
+            d = new Date(); p = new Date(d.getTime() -  5*86400000);
+            monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+            var w = p.getDate();
+            document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+        </script>3.10.2024 по <script type="text/javascript">
+            d = new Date(); p = new Date(d.getTime() +  1*86400000);
+            monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+            var w = p.getDate();
+            document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+        </script>9.10.2024 </b><br> на весь товар інтернет-магазину по всій території України</div>
+        <a href="https://svetr-plussize.website/#cat" class="button">Перейти до каталогу</a>
+        <div class="products_count">Залишилось <b>20</b> одиниць по акції</div>
+    </header>
+
+
+    <section class="description_section">
+        <!-- <h2 class="title"><span>КОФТИНКА</span></h2> -->
+        
+           <p><b>ТІЛЬКИ ЗАРАЗ ПРИ ПОКУПЦІ 2-ох ретро-гірлянд ПОДАРУНОК 🎁 ГІРЛЯНДА РОСА НА БАТЕРЕЙКА, 3 метри абсолютно БЕЗКОШТОВНО ✅<br>
+            І ЦЕ ЩЕ НЕ ВСЕ 🤫<br>
+            <br>
+            Заощаджуй прямо зараз <br>
+            3шт= 2897грн(знижка 100грн)+ПОДАРУНОК<br>
+            4шт=3796грн(знижка 200грн)+ПОДАРУНОК<br>
+            5шт=4745грн(знижка 250грн)<br>
+            +ПОДАРУНОК <br><br>
+            Професійна вулична гірлянда «Ретро» це відмінне рішення для створення затишних вечорів у Вас у дворі, на балконі, альтанці або в кафе</b></p>
+
+        <ul class="characteristics__list">
+            <li><b>Тип освітлення:</b> Світлодіодна гірлянда</li>
+            <li><b>Режим роботи:</b>Статичний</li>
+            <li><b>Напруга:</b>220 В</li>
+            <li><b>Тип живлення:</b>Мережа</li>
+            <li><b>Кількість ламп:</b>10</li>
+            <li><b>Колір світіння:</b>Жовтий</li>
+            <li><b>Тип гірлянди:</b>Кульки Вуличні</li>
+            <li><b>Ступінь захисту: </b>IP65 (захист від дощу, морозу та спеки)</li>
+        </ul>
+    </section>
+    <section class="cat" id="cat">
+
+        <h2 class="title" style="margin-left: 30px"><span>ОБЕРІТЬ </span>СВІЙ колір</h2>
+        
+       
+
+        <div class="catitem">
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+        
+                .slider {
+                    position: relative;
+                    max-width: 600px;
+                    margin: auto;
+                    overflow: hidden;
+                }
+        
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                }
+        
+                .slide {
+                    min-width: 100%;
+                    box-sizing: border-box;
+                }
+        
+                img {
+                    width: 100%;
+                    display: block;
+                }
+        
+                button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: rgba(255, 255, 255, 0.8);
+                    border: none;
+                    cursor: pointer;
+                    padding: 10px;
+                }
+        
+                .prev {
+                    left: 10px;
+                }
+        
+                .next {
+                    right: 10px;
+                }
+            </style>
+        
+        <div class="slider" id="slider1">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="./rer_files/1.jpg" alt="Фото 1">
+                </div>
+                <div class="slide">
+                    <img src="./rer_files/2.jpg" alt="Фото 2">
+                </div>
+                <div class="slide">
+                    <img src="./rer_files/3.jpg" alt="Фото 3">
+                </div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1, 'slider1')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1, 'slider1')">&#10095;</button>
+        </div>
+        
+            
+              <script>
+                const sliders = {};
+        
+                function initSlider(sliderId) {
+                    sliders[sliderId] = {
+                        index: 0,
+                        slides: document.querySelectorAll(`#${sliderId} .slide`)
+                    };
+                    showSlides(sliderId);
+                }
+        
+                function changeSlide(n, sliderId) {
+                    sliders[sliderId].index += n;
+                    showSlides(sliderId);
+                }
+        
+                function showSlides(sliderId) {
+                    const { index, slides } = sliders[sliderId];
+                    if (index >= slides.length) { sliders[sliderId].index = 0; }
+                    if (index < 0) { sliders[sliderId].index = slides.length - 1; }
+        
+                    slides.forEach((slide, i) => {
+                        slide.style.display = (i === sliders[sliderId].index) ? 'block' : 'none';
+                    });
+                }
+        
+                // Ініціалізація слайдерів
+                initSlider('slider1');
+                initSlider('slider2');
+            </script>
+            <div class="clearfix">
+             
+                <h3>гірлянда 10 LED 5 метрів, тепле світло.</h3>
+                <div class="catprice clearfix">
+                    <div class="cp-left">
+                        <span>-50%</span>
+                        <p>1500грн</p>
+                    </div>
+                    <div class="cp-right">
+                        <span>Ціна сьогодні:</span>
+                        <p>999грн</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#order_form" class="button">Оформити замовлення</a><br>
+       
+      <br>
+
+       
+           
+      
+            <div class="clearfix">
+                <img src="./rer_files/32.jpg" alt="">
+                <h3><b>гірлянда 10 LED 5 метрів, мультиколор.</b></h3>
+                <div class="catprice clearfix">
+                    <div class="cp-left">
+                        <span>-50%</span>
+                        <p>1900грн</p>
+                    </div>
+                    <div class="cp-right">
+                        <span>Ціна сьогодні:</span>
+                        <p>1279грн</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="#order_form" class="button">Оформити замовлення</a><br>
+        </div>
+        <br>
+           
+
+        <div class="catitem">
+            <img src="./rer_files/11.jpg" alt="">
+            <div class="clearfix">
+                <h3>гірлянда 10 LED 5 метрів, жовтий.</h3>
+                <div class="catprice clearfix">
+                    <div class="cp-left">
+                        <span>-50%</span>
+                        <p>1900грн</p>
+                    </div>
+                    <div class="cp-right">
+                        <span>Ціна сьогодні:</span>
+                        <p>1279грн</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#order_form" class="button">Оформити замовлення</a>
+        </div>
+
+        <div class="catitem">
+            <img src="./rer_files/12.jpg" alt="">
+            <div class="clearfix">
+                <h3>гірлянда 10 LED 5 метрів, теплий білий. </h3>
+                <div class="catprice clearfix">
+                    <div class="cp-left">
+                        <span>-50%</span>
+                        <p>1900грн</p>
+                    </div>
+                    <div class="cp-right">
+                        <span>Ціна сьогодні:</span>
+                        <p>1279грн</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#order_form" class="button">Оформити замовлення</a>
+        </div>
+
+        <div class="catitem">
+            <img src="./rer_files/35.jpg" alt="">
+            <div class="clearfix">
+                <h3>гірлянда 10 LED 5 метрів,  імітація вогню. </h3>
+                <div class="catprice clearfix">
+                    <div class="cp-left">
+                        <span>-50%</span>
+                        <p>2300грн</p>
+                    </div>
+                    <div class="cp-right">
+                        <span>Ціна сьогодні:</span>
+                        <p>1549грн</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#order_form" class="button">Оформити замовлення</a>
+        </div>
+       
+        <div class="catitem">
+            <img src="./rer_files/45.jpg" alt="">
+            <div class="clearfix">
+                <h3>Гірлянда Дюралайт вулична 480 LED, 16 м морозостійка.</h3>
+                <div class="catprice clearfix">
+                    <div class="cp-left">
+                        <span>-50%</span>
+                        <p>1650грн</p>
+                    </div>
+                    <div class="cp-right">
+                        <span>Ціна сьогодні:</span>
+                        <p>1099грн</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#order_form" class="button">Оформити замовлення</a>
+        </div>
+
+    </section>
+    
+    <section class="description_section" style="background: #cacaca; color: rgb(29, 29, 29);">
+       
+	
+        <p></p>
+        <p>ТІЛЬКИ ЗАРАЗ ПРИ ПОКУПЦІ 2-ох ретро-гірлянд ПОДАРУНОК 🎁 ГІРЛЯНДА РОСА НА БАТЕРЕЙКА, 3 метри абсолютно БЕЗКОШТОВНО ✅<br>
+            І ЦЕ ЩЕ НЕ ВСЕ 🤫<br><br>
+            Заощаджуй прямо зараз <br>
+3шт= 2897грн(знижка 100грн)+ПОДАРУНОК<br>
+4шт=3796грн(знижка 200грн)+ПОДАРУНОК<br>
+5шт=4745грн(знижка 250грн)<br>
++ПОДАРУНОК<br><br>
+
+Професійна вулична гірлянда «Ретро» це відмінне рішення для створення затишних вечорів у Вас у дворі, на балконі, альтанці або в кафе<br><br>
+ОСНОВНЕ:<br>
+Кут світіння: 300°<br>
+Тип світла: Тепле світло<br>
+Колір світіння: Жовтий<br>
+Режим роботи: Статичний<br>
+Режимів світіння: 1<br><br>
+ВОДОСТІЙКІСТЬ:<br>
+- високий клас водонепроникності IP44, що забезпечує надійний захист від дощу, снігу та вологи.<br><br>
+МІЦНІСТЬ:<br>
+1. Не тріскається від холоду.<br>
+2. Не нагрівається.<br>
+3. Не розбивається при падінні.<br><br>
+Гірлянда має ступінь захисту IP65 і тому її можна використовувати в будь яку пору року
+
+
+
+            </p>
+            </section>
+
+            <section class="reviews3_section">
+                <h2 class="title">Відгуки <span>покупців</span></h2>
+        
+                <div class="review_item">
+                    <div class="author_block clearfix">
+                        <img src="./rer_files/ava1.jpg" alt="">
+                        <div class="author_info">
+                            <div class="name">Вікторія</div>
+                            <div class="text">29 років</div>
+                        </div>
+                        <div class="info">
+                            <div class="rating"></div>
+                            <div class="date dattt">вчора</div>
+                        </div>
+                    </div>
+                    <p>Дуже вдячна за швидку доставку і якісну консультацію. Замовлення ідеально підійшло. Рекомендую всім!</p>
+        
+                </div>
+                <div class="review_item">
+                    <div class="author_block clearfix">
+                        <img src="./rer_files/ava2.jpg" alt="">
+                        <div class="author_info">
+                            <div class="name">Татьяна</div>
+                            <div class="text">38 років</div>
+                        </div>
+                        <div class="info">
+                            <div class="rating"></div>
+                            <div class="date dattt">2 дні тому</div>
+                        </div>
+                    </div>
+                    <p>Повністю відповідає опису та фото. Товар сподобався гарно виглядає на терасі</p>
+        
+                </div>
+                <div class="review_item">
+                    <div class="author_block clearfix">
+                        <img src="./rer_files/ava3.jpg" alt="">
+                        <div class="author_info">
+                            <div class="name">Ольга</div>
+                            <div class="text">46 років</div>
+                        </div>
+                        <div class="info">
+                            <div class="rating"></div>
+                            <div class="date dattt">3 дні тому</div>
+                        </div>
+                    </div>
+                    <p>Дуже гарні лампочки - світло мʼяке і приємне. Розвішувати було легко завдяки тримачам над лампочками.Прекрасне рішення для двору</p>
+        
+                </div>
+        
+            </section>
+
+    <div class="tlt">
+        <h2 class="title"><span>Як зробити</span><br> замовлення?</h2>
+    </div>
+    <div class="order_steps1">
+        <div class="step_item">
+            <div class="step_wrapper">
+                <img src="./rer_files/order_steps__step1_icon.png" alt="">
+                <h4>Заявка</h4>
+                <p>Заповніть форму на сайті</p>
+            </div>
+        </div>
+        <div class="step_item">
+            <div class="step_wrapper">
+                <img src="./rer_files/order_steps__step2_icon.png" alt="">
+                <h4>Дзвінок</h4>
+                <p>Наш менеджер передзвонить для уточнення деталей</p>
+            </div>
+        </div>
+        <div class="step_item">
+            <div class="step_wrapper">
+                <img src="./rer_files/order_steps__step3_icon.png" alt="">
+                <h4>Відправка</h4>
+                <p>Доставляємо ваш товар протягом<br>2-4 днів</p>
+            </div>
+        </div>
+        <div class="step_item">
+            <div class="step_wrapper">
+                <img src="./rer_files/order_steps__step4_icon.png" alt="">
+                <h4>Отримання</h4>
+                <p>Оплачуйте при отриманні на новій пошті</p>
+            </div>
+        </div>
+    </div>
+              
+
+    <section class="offer_section offer3 order">
+        <div class="main_wrapper">
+            <header class="offer_section offer3">
+                <h1 class="main_title">ХІТ 2024 року</h1>
+                <div class="info_block">
+                    <p class="subtitle"> ВУЛИЧНІ РЕТРО-ГІРЛЯНДИ </p>
+                    <div class="discount"><b>50% знижка</b></div>
+                    <img src="./rer_files/34.jpg" alt="">
+                </div>
+                <div class="price_block">
+                    <div class="price_item old">
+                        <div class="text">Звичайна ціна:</div>
+                        <div class="value">1500грн</div>
+                    </div>
+                    <div class="price_item new">
+                        <div class="text">Ціна сьогодні:</div>
+                        <div class="value" id="prices">999грн</div>
+                    </div>
+                </div>
+                <div class="benefits_block clearfix">
+                    <div class="benefit_item">
+                        <img src="./rer_files/11.jpg" alt="">
+                        <p> ЗАМОВЛЯЙ </p>
+                    </div>
+                    <div class="benefit_item">
+                        <img src="./rer_files/22.jpg" alt="">
+                        <p style="text-transform: uppercase">ЗАРАЗ  </p>
+                    </div>
+                    <div class="benefit_item">
+                        <img src="./rer_files/33.jpg" alt="">
+                        <p>ОТРИМУЙ ПОДАРУНОК</p>
+                    </div>
+                </div>
+        <div class="products_count">Знижка діє<br> <b style="background-color: rgb(226, 172, 36);color: #000;"> з <script type="text/javascript">
+            d = new Date(); p = new Date(d.getTime() -  5*86400000);
+            monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+            var w = p.getDate();
+            document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+        </script>3.10.2024 по <script type="text/javascript">
+            d = new Date(); p = new Date(d.getTime() +  1*86400000);
+            monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+            var w = p.getDate();
+            document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+        </script>9.10.2024 </b><br> на весь товар інтернет-магазину по всій території України</div>   
+
+        
+        
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('order_form').addEventListener('submit', function(e) {
+        e.preventDefault(); // Запобігаємо стандартній відправці форми
+        
+        // Отримуємо значення полів форми
+        var name = document.querySelector('input[name="name"]').value;
+        var phone = document.querySelector('input[name="phone"]').value;
+        var color = document.querySelector('select[name="color"]').value; // Отримуємо колір
+        var quantity = document.querySelector('select[name="quantity"]').value; // Отримуємо кількість
+
+        // Формуємо повідомлення
+        var message = `Нове замовлення:\nІм'я та прізвище: ${name} \nТелефон: ${phone} \nКолір: ${color} \nКількість: ${quantity};`;
+        
+        // Ваш токен та ID чату
+        var token = '7810432417:AAEsgNSOudBHsfWZMwwNZWRF3Zdqw9ngcGI';
+        var chatId = 703058222; // Замініть YOUR_CHAT_ID на ваш реальний ID чату
+        
+        // Відправляємо повідомлення через Telegram API
+        fetch('https://api.telegram.org/bot' + token + '/sendMessage', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                chat_id: chatId,
+                text: message,
+                parse_mode: "Markdown"
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            // Після успішної відправки, одразу перенаправляємо на сторінку "Дякую"
+            window.location.href = "./rer_files/thank_you_page.html"; 
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Помилка при відправленні замовлення.');
+        });
+    });
+});
+</script>
+
+
+
+
+
+        <form id="order_form" class="order_form" action="./rer_files/thank_you_page.html" method="post" onsubmit="return validateForm(&#39;formId&#39;);"> 
+            <h2 style="text-align: center;font-size: 25px;">Залиште заявку  <br> і ми звяжемось з вами </h2>
+            <br>
+            <select class="field" name="color" required="">
+                
+                <option selected="" disabled="">Оберіть колір</option>
+               
+                <option value="тепле світло"> тепле світло</option>
+                <option value="жовтий"> жовтий</option>
+                <option value="теплий білий">теплий білий</option>
+                <option value="імітація вогню">імітація вогню</option>
+                <option value="дюралайт">дюралайт</option>
+                
+              
+            </select>
+
+            <select class="field" name="quantity" required="">
+                <option selected="" disabled="">Оберіть кількість</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+                
+
+<br>
+          
+            <input class="field" type="text" name="name" id="name" placeholder="Введіть ваше прізвище та ім&#39;я" required="" oninput="validateName(this)">
+            <input class="field" type="tel" id="phone" name="phone" placeholder="Введіть ваш телефон"  required="">
+            <input type="hidden" name="price" id="price" value="999">
+            <input type="email" name="email" style="display: none;">
+            <input type="hidden" value="523" name="total" id="total">
+            <input type="hidden" name="csrf_token" value="7810432417:AAEsgNSOudBHsfWZMwwNZWRF3Zdqw9ngcGI">
+            <br>
+            <button class="button" type="submit" id="submit">Оформити замовлення</button>
+           
+        </form>
+        <div class="products_count">Залишилось <b>20</b> одиниць по акції</div>
+    </section>
+
+    <!-- /order 3 -->
+    <style media="screen">.button{position:relative;overflow:hidden}
+
+        .button:after{content:"";position:absolute;top:-50%;right:-50%;bottom:-50%;left:-50%;background:-webkit-gradient(linear,left top,left bottom,from(rgba(229,172,142,0)),color-stop(50%,rgba(255,255,255,.7)),color-stop(50%,rgba(229,172,142,0)));background:linear-gradient(to bottom,rgba(229,172,142,0),rgba(255,255,255,.7) 50%,rgba(229,172,142,0));-webkit-transform:rotateZ(60deg) translate(-5em,7.5em);-ms-transform:rotate(60deg) translate(-5em,7.5em);transform:rotateZ(60deg) translate(-5em,7.5em);opacity:0;filter: alpha(opacity=0);z-index:1;animation:sheens 3s infinite}@keyframes sheens {
+              0%,
+              79% {
+                  opacity: 0;
+                  filter: alpha(opacity=0);
+                  -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em);
+                  transform: rotateZ(60deg) translate(-5em, 7.5em)
+              }
+              80% {
+                  opacity: 1;
+                  filter: alpha(opacity=100);
+                  -webkit-transform: rotateZ(60deg) translate(-5em, 7.5em);
+                  transform: rotateZ(60deg) translate(-5em, 7.5em)
+              }
+              95% {
+                  opacity: 1;
+                  filter: alpha(opacity=100);
+                  -webkit-transform: rotateZ(60deg) translate(1em, -11em);
+                  transform: rotateZ(60deg) translate(1em, -11em)
+              }
+              to {
+                  opacity: 0;
+                  filter: alpha(opacity=0);
+                  -webkit-transform: rotateZ(60deg) translate(1em, -9em);
+                  transform: rotateZ(60deg) translate(1em, -9em)
+              }
+          }</style>
+    <!-- footer -->
+
+   
+    
+    <script src="./rer_files/jquery-3.6.0.min.js.завантаження"></script> 
+    <script type="text/javascript">
+        function validateForm(formId) {
+    
+          var button = document.getElementById("submit");
+          button.disabled = true; // Блокуємо кнопку
+          button.innerHTML = "Зачекайте..."; // Змінюємо текст кнопки
+    
+          return true; // Відправити форму
+        }
+      </script>
+   
+    <script>
+
+        var clientNameInput = document.getElementById('name');
+        clientNameInput.addEventListener('input', function() {
+          var words = this.value.split(' ');
+          for (var i = 0; i < words.length; i++) {
+            words[i] = words[i].charAt(0).toUpperCase() + words[i].slice(1);
+          }
+          this.value = words.join(' ');
+        });
+        </script>
+<script type="text/javascript">
+    const phoneNumberRegex = /^\+38\s?\(0(?:50|63|66|67|68|73|92|93|95|96|97|98|99)\)\s?\d{3}-\d{2}-\d{2}$/;
+  
+  const phoneNumberInput = document.getElementById('phone');
+  
+  const submitButton = document.getElementById('submit');
+  
+  submitButton.addEventListener('click', function(event) {
+    const phoneNumber = phoneNumberInput.value.trim();
+    
+     const modal = document.getElementById('myModal');
+  //const spinner = document.getElementById('spinner');
+  const message = document.getElementById('message');
+    
+    if (phoneNumberRegex.test(phoneNumber)) {
+    } else {
+      event.preventDefault(); 
+      modal.style.display = 'block';
+  var closeBtn = modal.querySelector(".close");
+  
+  closeBtn.addEventListener("click", function() {
+    modal.style.display = "none";
+  });
+    }
+  });
+  </script>
+    <style>
+    /* Стили для модального окна и спинера */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 50% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 50%;
+  border-radius: 8px;
+}
+
+
+.message {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Закрыть кнопку модального окна */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+</style>
+
+    <div id="myModal" class="modal">
+  <div class="modal-content">
+     <span class="close">×</span>
+    <div id="message" class="message">Спасибо, заказ принят!</div>
+  </div>
+</div>
+
+
+    
+</div>
+
+
+<!-- <style>table {
+    border-collapse: inherit
+}</style> -->
+
+
+<script src="./rer_files/mask_input.js.завантаження"></script>
+<script src="./rer_files/slick.min.js.завантаження"></script>
+<script src="./rer_files/scripts.js.завантаження"></script>
+
+<script>
+    
+    function closeWidget() {
+        var widget = document.getElementById("fast-delivery-widget");
+        widget.style.display = "none"; 
+    }
+</script>
+
+<div id="fast-delivery-widget" class="fast-delivery-widget_light">
+    <span class="fast-delivery-widget__title">Швидка доставка <br> Оплата при отриманні</span>
+    <p class="fast-delivery-widget__info">
+         </p>
+    
+    <div class="fast-delivery-widget__close" onclick="closeWidget()">✖</div>
+    </div>
+   
+   
+         
+   
+
+
+
+</body></html>
